@@ -46,7 +46,7 @@ asp3_pico_sdk/
 
 ```bash
 # 取得（asp3_core は public なので匿名で submodule 取得可）
-git clone --recurse-submodules https://github.com/exshonda/asp3_pico_sdk.git
+git clone --recurse-submodules https://github.com/toppers/asp3_pico_sdk.git
 cd asp3_pico_sdk
 # 既存clone: git submodule update --init --recursive
 

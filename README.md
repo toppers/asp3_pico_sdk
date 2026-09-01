@@ -1,6 +1,6 @@
 # TOPPERS/ASP3×pico-sdk
 
-[TOPPERS/ASP3](https://github.com/exshonda/asp3_pico_sdk)を[pico-sdk](https://github.com/raspberrypi/pico-sdk)と使えるようにしたプロジェクトの例です。
+[TOPPERS/ASP3](https://github.com/toppers/asp3_pico_sdk)を[pico-sdk](https://github.com/raspberrypi/pico-sdk)と使えるようにしたプロジェクトの例です。
 
 [Visual Studio Code](https://code.visualstudio.com/)の[Raspberry Pi Pico 拡張機能](https://github.com/raspberrypi/pico-vscode)で作成したプロジェクトに、`asp3`を追加することで、シングルコア対応 RTOS API が使えます。
 
@@ -14,7 +14,7 @@ Raspberry Pi Pico 2（RP2350）の **ARM（Cortex-M33）／RISC-V（Hazard3）�
 純カーネル（`asp3/asp3_core`）はサブモジュールなので、下記のように再帰的にクローンしてください。
 
 ```bash
-git clone --recurse-submodules https://github.com/exshonda/asp3_pico_sdk.git
+git clone --recurse-submodules https://github.com/toppers/asp3_pico_sdk.git
 cd asp3_pico_sdk
 # 既にクローン済みの場合: git submodule update --init --recursive
 ```
