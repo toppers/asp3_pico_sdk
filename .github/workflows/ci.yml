@@ -1,7 +1,7 @@
 #
 #		CI（Raspberry Pi PICO2 / Pico SDK統合 build-only）
 #
-#  asp3_core と同じ開発コンテナイメージ（ghcr.io/exshonda/asp3_core-dev）で
+#  asp3_core と同じ開発コンテナイメージ（ghcr.io/toppers/asp3_core-dev）で
 #  実行する．pico-sdk は GUI 生成ツール不要（git 取得のみ）のため，SDK を
 #  バージョン固定で clone すれば arm-none-eabi-gcc だけで cmake ビルドが通る
 #  （ホスト検証済み：picotool は PICOTOOL_NO_LIBUSB で自動ビルド＝libusb 不要）．
@@ -34,7 +34,7 @@ jobs:
     name: Build sample1 (Cortex-M33 / Pico SDK, rp2350-arm-s)
     runs-on: ubuntu-24.04
     container:
-      image: ghcr.io/exshonda/asp3_core-dev:20260606
+      image: ghcr.io/toppers/asp3_core-dev:20260606
       #  イメージの既定ユーザはvscode（devcontainer用）のため、Actionsの
       #  ランナーファイルに書けるようrootで実行する
       options: --user root
